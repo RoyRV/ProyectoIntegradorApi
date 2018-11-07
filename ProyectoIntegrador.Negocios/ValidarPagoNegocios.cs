@@ -10,7 +10,12 @@ namespace ProyectoIntegrador.Negocios
 {
     public class ValidarPagoNegocios
     {
-        TarjetaDatos tarjetaDatos = new TarjetaDatos();
+        public ITarjetaDatos tarjetaDatos;
+
+        public ValidarPagoNegocios()
+        {
+            this.tarjetaDatos = new TarjetaDatos();
+        }
 
         public bool ValidarPago(out string mensaje,
                                 int tipoTarjeta,

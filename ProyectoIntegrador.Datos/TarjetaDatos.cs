@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoIntegrador.Datos
 {
-    public class TarjetaDatos
+    public class TarjetaDatos : ITarjetaDatos
     {
         string cadenaConexion = "server=RROJAS\\SQLEXPRESS;database=bdProyeIntegrador;Integrated Security=true";
         SqlConnection conexion;
